@@ -1,0 +1,729 @@
+/********** Nút go to top ***************/
+a#gototop {
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px;
+    font-size: 20px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    position: fixed;
+    z-index: 999;
+    bottom: 15px;
+    right: 15px;
+}
+
+a#gototop:hover {
+    background-color:blue ;
+}
+
+/************ Nút đặt hàng *****************/
+a#dathang {
+    text-decoration: none;
+    display: block;
+    padding: 16px;
+    font-size: 20px;
+    background:rgba(255,132,0, 0.9);
+    border-radius: 50%;
+    color: white;
+    position: fixed;
+    z-index: 999;
+    bottom: 80px;
+    right: 10px;
+}
+
+a#dathang:hover {
+    background-color:orangered ;
+}
+
+/*************** Nav ************************/
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: transparent;  
+}
+
+.container{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.nav-menu{
+    position: relative;
+}
+
+.nav-logo {
+    text-decoration: none;
+    font-size: 35px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-toggle {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-menu{
+    position: relative;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+.nav-menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu ul li{
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-menu ul li:last-child{
+    padding-right: 0;
+}
+
+.nav-menu ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.nav-toggle{
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.nav-user{
+    font-size: 24px;
+    color: white;
+    margin-left: 50px;
+}
+
+.menu_mobile {
+    display: none;
+}
+
+/******************** menu ẩn *********************************/
+
+@media screen and (max-width: 1300px) {
+    .container {
+        cursor: pointer;
+        padding: 20px;
+        display: inline-block;
+        background:rgba(0,0,0,0.1)
+    }
+      
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 2px;
+        transition: 0.4s;
+    }
+      
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+      
+    .change .bar2 {opacity: 0;}
+      
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    nav.container {
+        display:none;
+    }
+
+    .menu_mobile{
+        display: block;
+        list-style-type: none;
+        width: 100%;
+        position: absolute;
+        background-color:white;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu_mobile li {
+        padding: 12px 15px;
+        margin: 5px;
+    }
+
+    .menu_mobile li:first-child{
+        margin-top: 0;
+    }
+
+    .menu_mobile li a {
+        font-size: 24px;
+        color:black;
+        text-decoration: none;    
+    }
+    
+    .menu_mobile li:hover {
+        background-color: orangered;
+    }
+
+}
+
+/************* Image cho Header **************/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nen_in {
+    position: relative;
+    margin-top: 5%;
+}
+
+.tong img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+div.ten_quan > h1 {
+    text-align: center;
+    color: yellow;
+    font-size: 5rem;
+    font-family: cursive;
+    padding-top: 2%;
+    margin: 0 0 10px 0;
+}
+
+div.td_phu h3 {
+    text-align: center;
+    color: yellow;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.td_phu h3:first-child {
+    margin: 30px 0 5px 0;
+}
+
+div.td_phu h3:last-child {
+    margin: 10px 0 30px 0;
+}
+
+div.button_order {
+    border: 5px solid orangered;
+    border-radius: 90px;
+    text-align: center;
+    width: 20%;
+    padding: 10px;
+    margin-left: 40%;
+    position: relative;
+}
+
+div.button_order > a {
+    text-decoration: none;
+    font-size: 35px;
+    color: white;
+}
+
+div.button_order:hover {
+    background-color: orangered;
+    border-radius: 90px;
+}
+
+/********* story *********/
+section.one {
+    margin: 20% 7% 5% 7%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.image_story , .content {
+    width: 48%;
+    height: 90%;
+}
+
+.content {
+    border: 6px solid plum ;
+    box-shadow: 3px 4px lightslategray;
+    border-radius: 4rem 0 4rem 0;
+    margin-top: 9%;
+}
+
+.contents {
+    display: flex;
+}
+
+.chu_story p.tde {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 5px 3px 5px;
+}
+
+.chu_story p.tde_1 {
+    text-align: center;
+    font-size: 34px;
+    font-weight:700;
+    color: red;
+    margin: 10px 5px 5px 5px;
+}
+
+.contents > .cooker > img {
+    width: 100%;
+    margin-left: 10px;
+}
+
+.chu_story {
+    margin-top: 5%;
+}
+
+.cooker{
+    width: 30%;
+}
+
+.nd {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0 10px 10px 10px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.image_story > img {
+    width: 95%;
+    height: 90%;
+    border-radius: 5rem;
+    margin: 10px;
+}
+
+/*********** Footer ***********/
+.footers {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content:space-evenly;
+    background-color: #1e1f26;
+    color: white;
+}
+
+.col24 {
+    width: 24%;
+}
+
+.col35 {
+    width: 30%;
+}
+
+.col15 {
+    width: 12%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+hr.line_footer {
+    width: 60%;
+    border: 2px solid;
+    margin-left: 20%;
+    margin-bottom: 4%;
+}
+
+/* về chúng tôi */
+div.td > div{
+    border: 3px solid;
+    border-radius: 20%;
+    margin-top: 1%;
+}
+
+div.td p {
+    font-size: 18px;
+    margin: 0;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* thông tin liên lạc*/
+div.lien_he {
+    display: flex;
+    margin: 14px 15%;
+}
+
+div.ki_tu > i {
+    font-size: 26px;
+}
+
+div.info {
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+div.info > .mails {
+    text-decoration: none;
+    color: white;
+}
+
+div.info > .mails:hover{
+    color: blue;
+}
+
+/* mạng xã hội */
+.mxh a > i {
+    font-size: 35px;
+    margin: 2px 38%;
+}
+
+.mxh > a > i.one {
+    color: blue;
+}
+
+.mxh > a > i.two {
+    color: #c336a1;
+}
+
+.mxh > a > i.three {
+    color: #1c9cea;
+}
+
+.mxh > a > i.four {
+    color: red;
+}
+
+/*giờ hoạt động*/
+div.times_open p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.times_open {
+    margin-left: 8%;
+    margin-top: 4%;
+    line-height: 3rem;
+}
+
+/************** End ************/
+.end {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.end p {
+    margin: 0;
+    padding: 5px;
+}
+
+/********* menu thức ăn ************/
+* {
+    box-sizing: border-box;
+}
+
+section.menu_food {
+    margin: 5% 7% 5% 7%;
+}
+
+.food {
+    width: 24%;
+    margin:0.5%;
+    position: relative;
+    margin-top: 2.5%;
+}
+
+div.label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    font-weight: 600;   
+    padding: 8px;
+    animation: doimau .6s infinite;
+}
+
+@keyframes doimau {
+    from {
+        color: yellow;
+    }
+    to {
+        color: red;
+    }
+}
+
+div.label_left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    color: red;
+    background-color: yellow;
+    padding: 6px;
+}
+
+div.gia {
+    background-color: rgba(255, 241, 208, 0.8);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    text-align: center;
+    height: 0;
+    transition: height ease 0.5s;
+}
+
+div.food:hover div.gia{
+    height: 100%;
+}
+
+div.gia p:first-child{
+    margin-top: 20%;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+div.gia p.km {
+    text-decoration: line-through black;
+}
+
+div.gia p , div.gia span {
+    font-size: 20px;
+    margin: 0;
+    padding: 5px 10px 5px 10px;
+}
+
+.image_food > img {
+    width: 100%;
+}
+
+div.items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.font_td > h1{
+    font-size: 48px;
+    color: crimson;
+    text-align: center;
+    margin:0;
+    padding: 0 10px 0 10px;
+}
+
+div.font_td {
+    width: 25%;
+    align-items: center;
+}
+
+div.line_font {
+    display: flex;
+    margin: 0.5%;
+}
+
+.line_menu {
+    background-color: darkgreen;
+    width: 38%;
+    height: 10px;
+    margin-top: 2%;
+}
+
+/********** Hình ảnh *************/
+section.images {
+    margin: 5% 7% ;
+}
+
+div.images_1 {
+    width: 28%;    
+    margin: 15px 0;
+}
+
+div.images_1 img {
+    width: 100%;   
+    border: 4px solid orangered;
+    transition: transform 1s ;
+}
+
+div.images_1 img:hover{
+    transform: scale(1.1);
+    border: 3px solid lightgray;
+    box-shadow: 3px 4px gray;
+}
+
+div.image_tong {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin-top: 3%;
+}
+
+div.nhom_2 > img {
+    border-radius: 90px;
+}
+
+div.nhom_3 > img {
+    border-radius: 60px 0 60px 0;
+}
+
+div.nhom_1 > img {
+    border-radius: 0 60px 0 60px;
+}
+
+/********** phần phản hồi ***********/
+.phan_hoi {
+    margin: 5% 0;
+    background-color: #92a9f3;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.right_ph {
+    width: 55%;
+}
+
+div.left_ph {
+    width: 33%;
+}
+
+/****** phần đánh giá của khách hàng ************/
+.hinh_ph img {
+    width: 15%;
+    border-radius: 50%;
+}
+
+div.box {
+    width: 80%;
+    height: 40vh;
+    /*border: 4px outset gray;*/
+    box-shadow: 10px 10px lightgray;
+    background-color: white;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+div.boxs {
+    position: relative;
+    margin: 3% 0;
+}
+
+.ndph {
+    margin-top: 5%;
+}
+
+div.ndph {
+    padding: 40px 70px;
+    font-size: 20px;
+}
+
+div.star {
+    margin-left: auto;
+    color: red;
+    font-size: 20px;
+    padding-top: 4%;
+}
+
+div.star i{
+    font-size: 24px;
+}
+
+div.danh_gia {
+    display: flex;
+}
+
+div.danh_gia > span {
+    padding-top: 4%;
+    padding-left: 7%;
+}
+
+/********* phần tên tiêu đề *********/
+div.left_ph {
+    position: relative;
+}
+
+div.thoi {
+    width: 250px;
+    height: 250px;
+    background: blue;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    margin-top: 40%;
+    margin-bottom: 20%;
+    margin-left: 60%;
+}  
+
+div.td_h1 > h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 10px;
+    text-align: center;
+}
+
+div.td_h1 {
+    position: absolute;
+    top: 35%;
+    left: 18%;
+}
+
+/********** thanh trượt tự động *************/
+html,body {
+        position: relative;
+        height: 100%;
+}
+    
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #92a9f3;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="Quán ăn Trâm Anh, restaurant Trâm Anh">
+        <meta name="description" content="Kinh doanh quán ăn">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>Quán ăn Trâm Anh</title>  
+        <link href="image/icon.png" rel="shortcut icon"/>
+        <!-- link css-->
+        <link href="css/trang_chu.css" rel="stylesheet" />
+        <!--link icon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <!--link animate-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <!--link javascript-->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/trang_chu.js"></script>
+        <script src="js/order.js"></script>
+        <!-- link animate scroll library-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- link tạo thanh trượt tự động -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    </head>
+    <body>
+        <!-- nút đặt hàng nhanh  -->
+        <div>
+            <a id="dathang" href="order.html" title="Đặt hàng nhanh"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+
+        <!-- nút go to top -->
+        <div>
+            <a id="gototop" href="javascript:;"><i class="fas fa-angle-double-up"></i></a>
+        </div>
+
+        <!-- menu -->
+        <header> 
+            <nav class="nav container">
+                <a href="index.html" class="nav-logo">Trâm Anh</a>
+
+                <div class="nav-menu">
+                    
+                    <ul class="sub-menu">
+                        <li><a href="index.html" class="nav_home nav_link">Trang chủ</a></li>
+                        <li><a href="menu.html" class="nav_link">Thực đơn</a></li>
+                        <li><a href="blog.html" class="nav_link">Blog</a></li>
+                        <li><a href="hinh_anh.html" class="nav_link">Hình ảnh</a></li>
+                        <li><a href="order.html" class="nav_link">Đặt bàn</a></li>
+                        <li><a href="#footers" class="nav_link">Liên hệ</a></li>
+                        <li>
+                            <a href="#" title="Đăng nhập">
+                                <i class="fas fa-user nav-user " id="nav-user"></i>
+                            </a>
+                        </li>
+                    </ul>  
+            </nav>
+
+            <!-- menu ẩn  -->
+        <div class="mobile">
+            <div style="background:rgba(0,0,0,0.1)">
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+
+            <ul class="menu_mobile" id="mm">
+                <li><a href="trang_chu.html" class="nav_home nav_link">Trang chủ</a></li>
+                <li><a href="menu.html" class="link">Thực đơn</a></li>
+                <li><a href="blog.html" class="link">Blog</a></li>
+                <li><a href="hinh_anh.html" class="link">Hình ảnh</a></li>
+                <li><a href="order.html" class="link">Đặt bàn</a></li>
+                <li><a href="#footers" class="nav_link">Liên hệ</a></li>
+                <li><a href="#" title="Đăng nhập">Đăng nhập</a></li>
+            </ul>
+        </div>
+        </header>
+
+        
+
+        <!-- nen chinh trong header -->
+        <section class="tong" >
+            <img src="image/nen_11.jpg" class="man" />
+            <div class="nen_in">
+                <div class="ten_quan">
+                    <h1 class="animate__animated animate__tada">QUÁN ĂN TRÂM ANH</h1>
+                </div>
+
+                <div class="td_phu animate__animated animate__backInLeft animate__fast">
+                    <h3>Món ngon có một không hai</h3>
+                    <h3>Hãy đặt ngay</h3>
+                </div>
+
+                <div class="button_order">
+                    <a href="order.html">Đặt bàn</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- story -->
+        <section id="story" class="one">
+            <div class="image_story">
+                <img src="image/story.jpg" />
+            </div>
+            <div class="content">
+                <div class="contents">
+                    <div class="cooker">
+                        <img src="image/cooker.png" />
+                    </div>
+                    <div class="chu_story">
+                        <p class="tde">Chào mừng đến với</p>
+                        <p class="tde_1">QUÁN ĂN TRÂM ANH</p>
+                    </div>
+                </div>
+                <div class="ndvb">
+                    <p class="nd">Đến với quán ăn chúng tôi, Bạn sẽ được trải nghiệm ẩm thực tuyệt vời trong không gian rộng,
+                        được thiết kế hài hòa với thiên nhiên và thuận lợi cho việc tổ chức tiệc, hội nghị, họp lớp, sinh nhật, của cá nhân và tổ chức, tour du lịch…với
+                        giá cả hợp lý tùy theo nhu cầu của khách hàng</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- menu thức ăn -->
+        <section class="menu_food">
+            <div class="line_font">
+                <div class="line_menu" >
+                    <hr/>
+                </div>
+                <div class="font_td">
+                    <h1>THỰC ĐƠN</h1>
+                </div>
+                <div class="line_menu">
+                    <hr/>
+                </div>
+            </div>
+            
+            <div class="items">
+                <div class="food">
+                    <div class="image_food">
+                        <img src="image/mon_chinh_1.jpg" alt="rong biển cuộn nấm kim chi"/>
+                    </div>
+                    <div class="gia">
+                        <p>Rong biển cuộn nấm kim chi</p>
+                        <p class="km">50,000đ</p>
+                        <span>40,000đ</span>
+                    </div>
+                    <div class="label">New</div>
+                    <div class="label_left">
+                        Sale
+                        <br/>
+                        20%
+                    </div>
+                </div>
+
+                <div class="food">
+                    <div class="image_food">
+                        <img src="image/trang_mieng_2.jpg" alt="Pancake shushi"/>
+                    </div>
+                    <div class="gia">
+                        <p>Pancake shushi</p>
+                        <p class="km">55,000đ</p>
+                        <span>44,000đ</span>
+                    </div>
+                    <div class="label">New</div>
+                    <div class="label_left">
+                        Sale
+                        <br/>
+                        20%
+                    </div>
+                </div>
+
+                <div class="food">
+                    <div class="image_food">
+                        <img src="image/nuoc_uong_2.jpg" alt="Trà đào cam sả"/>
+                    </div>
+                    <div class="gia">
+                        <p>Trà đào cam sả</p>
+                        <p>45,000đ</p>
+                    </div>
+                </div>
+
+                <div class="food">
+                    <div class="image_food">
+                        <img src="image/mon_chinh_9.jpg" alt="Gà nướng xí muội"/>
+                    </div>
+                    <div class="gia">
+                        <p>Gà nướng xí muội</p>
+                        <p>120,000đ</p>
+                    </div>
+                </div>
+
+                <div class="food">
+                    <div class="image_food">
+                        <img src="image/trang_mieng_3.jpg" alt="Bánh rán chocolate đậu đỏ"/>
+                    </div>
+                    <div class="gia">
+                        <p>Bánh rán chocolate đậu đỏ</p>
+                        <p class="km">60,000đ</p>
+                        <span>48,000đ</span>
+                    </div>
+                    <div class="label">New</div>
+                    <div class="label_left">
+                        Sale
+                        <br/>
+                        20%
+                    </div>
+                </div>
+
+                <div class="food">
+                    <div class="image_food">
+                        <img src="image/mon_chinh_4.jpg" alt="Salad mực ống rong biển"/>
+                    </div>
+                    <div class="gia">
+                        <p>Salad mực ống rong biển</p>
+                        <p class="km">80,000đ</p>
+                        <span>64,000đ</span>
+                    </div>
+                    <div class="label">New</div>
+                    <div class="label_left">
+                        Sale
+                        <br/>
+                        20%
+                    </div>
+                </div>
+
+                <div class="food">
+                    <div class="image_food">
+                        <img src="image/nuoc_uong_4.jpg" alt="Trà việt quất"/>
+                    </div>
+                    <div class="gia">
+                        <p>Trà việt quất</p>
+                        <p class="km">45,000đ</p>
+                        <span>41,000đ</span>
+                    </div>
+                    <div class="label">New</div>
+                    <div class="label_left">
+                        Sale
+                        <br/>
+                        10%
+                    </div>
+                </div>
+
+                <div class="food">
+                    <div class="image_food">
+                        <img src="image/mon_chinh_8.jpg" alt="bò cuộn lá quế"/>
+                    </div>
+                    <div class="gia">
+                        <p>Bò cuộn lá quế</p>
+                        <p>60,000đ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--hình ảnh  -->
+        <section class="images">
+            <div class="line_font">
+                <div class="line_menu" >
+                    <hr/>
+                </div>
+                <div class="font_td">
+                    <h1>HÌNH ẢNH</h1>
+                </div>
+                <div class="line_menu">
+                    <hr/>
+                </div>
+            </div>
+
+            <div class="image_tong">
+
+                
+                    <div class="images_1 nhom_1">
+                        <img src="image/image_1.jpg" alt="hình 1"/>
+                    </div>
+                    <div class="images_1 nhom_2">
+                        <img src="image/image_3.jpg" alt="hình 3"/>
+                    </div>
+            
+
+                
+                    <div class="images_1 nhom_3">
+                        <img src="image/image_2.jpg" alt="hình 2"/>
+                    </div>
+                    <div class="images_1 nhom_3">
+                        <img src="image/image_4.jpg" alt="hình 4"/>
+                    </div>
+                
+
+                
+                    <div class="images_1 nhom_2">
+                        <img src="image/image_5.jpg" alt="hình 5"/>
+                    </div>
+                    <div class="images_1 nhom_1">
+                        <img src="image/image_6.jpg" alt="hình 6"/>
+                    </div>
+                
+
+            </div>
+        </section>
+
+        <!--đáng giá và phản hồi của khách hàng  -->
+        <section class="phan_hoi " data-aos="fade-up">
+            <div class="left_ph">
+                <div class="thoi"></div>
+                <div class="td_h1">
+                    <h1>NHẬN XÉT CỦA KHÁCH HÀNG</h1> 
+                </div>
+            </div>
+
+            <div class="right_ph">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="boxs">
+                                <div class="box">
+                                    <div class="ndph">
+                                        <p>
+                                            Món ăn ngon và trang trí rất đẹp mắt, phục vụ nhiệt tình và thân thiện!!
+                                            Sẽ đến đây lần nữa nếu có dịp.
+                                        </p>
+                                        <div class="danh_gia">
+                                            <span>Lam Thố</span>
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="boxs">
+                                <div class="box ones">
+                                    <div class="ndph">
+                                        <p>
+                                            Đó là một nơi hoàn hảo cho một bữa tối tuyệt vời hoặc dịp đặc biệt!
+                                            Cách trang trí đẹp và thanh lịch và đa dạng món ngon.
+                                        </p>
+                                        <div class="danh_gia">
+                                            <span>Harry Trần</span>
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="boxs">
+                                <div class="box">
+                                    <div class="ndph">
+                                        <p>
+                                            Lần đầu ghé nhà hàng cùng gia đình cảm thấy không gian ấm cúng,
+                                            món ăn rất ngon và trang trí đẹp mắt.
+                                            Sẽ còn quay lại nhiều lần cùng gia đình và bạn bè.
+                                        </p>
+                                        <div class="danh_gia">
+                                            <span>Tiểu Lam</span>
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="boxs">
+                                <div class="box">
+                                    <div class="ndph">
+                                        <p>
+                                            Không gian đẹp, phục vụ nhiệt tình và chu đáo, món ăn ngon !! 
+                                            Mong nhà hàng ra nhiều món ăn hơn nữa và mở rộng không gian hơn.
+                                        </p>
+                                        <div class="danh_gia">
+                                            <span>Lam Bích</span>
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- phần chân trang -->
+        <div id="footers" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <!-- footer-->
+            <footer>
+                <div class="footers">
+
+                        <!-- về chúng tôi -->   
+                        <div class="col24 td">
+                            <h2>Về Chúng tôi</h2>
+                                <div>
+                                <p>Sự hài lòng của quý khách là niềm vinh hạnh của chúng tôi.
+                                    Chúc quý khách ngon miệng, chúng tôi luôn đồng hành cùng bạn. 
+                                    Xin trân trọng cảm ơn !!
+                                </div>
+                            </p>
+                        </div>
+
+                        <!-- thông tin liên lạc  --> 
+                        <div class="col35">
+                            <h2>Thông tin liên lạc</h2>
+                            <hr class="line_footer" />
+                            <div class="ttlh">
+                                    <div class="lien_he">
+                                        <div  class="ki_tu"><i class="fas fa-phone-volume"></i></div>
+                                        <div class="info" >
+                                            <span>Số điện thoại</span>
+                                            <br>
+                                            <span>0797014886</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="lien_he">
+                                        <div class="ki_tu"><i class="fas fa-envelope"></i></div>
+                                        <div class="info">
+                                            <span>Email</span>
+                                            <br>
+                                            <a class="mails" href="mailto:tramanhvo2103@gmail.com">tramanhvo2103@gmail.com</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="lien_he">
+                                        <div  class="ki_tu"><i class="fas fa-map-marker-alt"></i></div>
+                                        <div class="info">
+                                            <span>Địa chỉ</span>
+                                            <br>
+                                            <span>76/1 An Dương Vương, P.16, Q.8</span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <!--mạng xã hội --> 
+                        <div class="col15 ">
+                            <h2>Mạng xã hội</h2>
+                            <hr class="line_footer" />
+                            <div class="add_mxh">
+                                <div class="mxh">
+                                    <a href="https://www.facebook.com/vo.tramanh.543" title="Facebook"><i class="one fab fa-facebook-square"></i></a>
+                                    <br/>
+                                    <a href="#" title="Instagram"><i class="two fab fa-instagram"></i></a>
+                                    <br/>
+                                    <a href="#" title="Twitter"><i class="three fab fa-twitter-square"></i></a> 
+                                    <br/>
+                                    <a href="#" title="Youtube"><i class="four fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- giờ mở cửa --> 
+                        <div class="col24 times">
+                            <h2>Giờ mở cửa</h2>
+                            <hr class="line_footer" />
+                            <div class="times_open">
+                                <p>Thứ hai - Thứ sáu: 8:AM - 10:PM</p>
+                                <p>Thứ bảy - Chủ nhật: 8:AM - 11:PM</p>
+                                <p>Ngày lễ vẫn hoạt động bình thường </p>
+                            </div>
+                        </div>
+
+                </div>
+            </footer>
+
+            <!--kết-->
+            <div class="end">
+                <p>Copyright © 2021 All Rights Reserved</p>
+                <p>Thiết kế bởi Trâm Anh</p>
+            </div>
+        </div>
+
+        <!-- link js animate scroll library-->
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <script>
+           AOS.init({
+               offset: 400,
+               duration: 1000,
+               disable: false,
+           });
+       </script>
+
+       <!--link js của thanh trượt tự động -->
+       <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+       <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+        </script>
+
+        <!-- link js animate scroll library-->
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <script>
+           AOS.init({
+               offset: 400,
+               duration: 1000,
+               disable: false,
+           });
+       </script>
+    </body>
+</html>

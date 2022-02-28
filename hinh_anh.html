@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="Quán ăn Trâm Anh, restaurant Trâm Anh">
+        <meta name="description" content="Kinh doanh quán ăn">
+        <meta http-equiv="refresh" content="1800">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>Quán ăn Trâm Anh</title>  
+        <link href="image/icon.png" rel="shortcut icon"/>
+        <link href="css/hinh_anh.css" rel="stylesheet" />
+        <!--link icon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <!--link animate scroll library-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/trang_chu.js"></script>
+        <script src="js/order.js"></script>
+    </head>
+    <body>
+        <!-- nút đặt hàng nhanh  -->
+        <div>
+            <a id="dathang" href="order.html" title="Đặt hàng nhanh"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+
+        <!-- nút go to top -->
+        <div>
+            <a id="gototop" href="javascript:;"><i class="fas fa-angle-double-up" ></i></a>
+        </div>
+
+        <!-- menu -->
+        <nav>
+            <a href="index.html" class="nav-logo">Trâm Anh</a>
+
+            <ul class="sub-menu">
+                <li><a href="index.html" class="nav_home nav_link">Trang chủ</a></li>
+                <li><a href="menu.html" class="nav_link">Thực đơn</a></li>
+                <li><a href="blog.html" class="nav_link">Blog</a></li>
+                <li><a href="hinh_anh.html" class="nav_link">Hình ảnh</a></li>
+                <li><a href="order.html" class="nav_link">Đặt bàn</a></li>
+                <li><a href="#footers" class="nav_link">Liên hệ</a></li>
+                <li>
+                    <a href="#" title="Đăng nhập">
+                        <i class="fas fa-user nav-user " id="nav-user"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- menu ẩn  -->
+        <div class="mobile">
+            <div style="background-color: #1e1f26;">
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+
+            <ul class="menu_mobile" id="mm">
+                <li><a href="trang_chu.html" class="nav_home nav_link">Trang chủ</a></li>
+                <li><a href="menu.html" class="link">Thực đơn</a></li>
+                <li><a href="blog.html" class="link">Blog</a></li>
+                <li><a href="hinh_anh.html" class="link">Hình ảnh</a></li>
+                <li><a href="order.html" class="link">Đặt bàn</a></li>
+                <li><a href="#footers" class="nav_link">Liên hệ</a></li>
+                <li><a href="#" title="Đăng nhập">Đăng nhập</a></li>
+            </ul>
+        </div>
+        
+        <!-- phần hình ảnh -->
+        <section class="hinh">
+            <div class="images" >
+                <div class="image">
+                    <img src="image/image_1.jpg" alt="hình 1"/>
+                </div>
+            </div>
+
+            <div class="images" >
+                <div class="image">
+                    <img src="image/image_8.jpg" alt="hình 2"/>
+                </div>
+            </div>
+
+            <div class="images" >
+                <div class="image">
+                    <img src="image/image_2.jpg" alt="hình 3"/>
+                </div>
+            </div>
+
+            <div class="images" data-aos="fade-right">
+                <div class="image">
+                    <img src="image/image_5.jpg" alt="hình 4"/>
+                </div>
+            </div>
+
+            <div class="images" data-aos="fade-up">
+                <div class="image">
+                    <img src="image/image_3.jpg" alt="hình 5"/>
+                </div>
+            </div>
+
+            <div class="images" data-aos="fade-left">
+                <div class="image">
+                    <img src="image/image_4.jpg" alt="hình 6"/>
+                </div>
+            </div>
+
+            <div class="images" data-aos="flip-left">
+                <div class="image">
+                    <img src="image/image_7.jpg" alt="hình 7"/>
+                </div>
+            </div>
+
+            <div class="images" data-aos="flip-up">
+                <div class="image">
+                    <img src="image/image_6.jpg" alt="hình 8"/>
+                </div>
+            </div>
+
+            <div class="images" data-aos="flip-right">
+                <div class="image">
+                    <img src="image/image_9.jpg" alt="hình 9"/>
+                </div>
+            </div>
+
+            <div class="images" data-aos="fade-up-right">
+                <div class="image">
+                    <img src="image/image_11.jpeg" alt="hình 10"/>
+                </div>
+            </div>
+
+            <div class="images" data-aos="fade-down">
+                <div class="image">
+                    <img src="image/image_10.jpg" alt="hình 11"/>
+                </div>
+            </div>
+
+            <div class="images" data-aos="fade-up-left">
+                <div class="image">
+                    <img src="image/image_12.jpg" alt="hình 12"/>
+                </div>
+            </div>
+
+            <div class="images"  data-aos="zoom-in-right">
+                <div class="image">
+                    <img src="image/image_13.jpg" alt="hình 13"/>
+                </div>
+            </div>
+
+            <div class="images"  data-aos="zoom-in-up">
+                <div class="image">
+                    <img src="image/image_14.jpg" alt="hình 14"/>
+                </div>
+            </div>
+
+            <div class="images" data-aos="zoom-in-left">
+                <div class="image">
+                    <img src="image/image_15.jpg" alt="hình 15"/>
+                </div>
+            </div>
+
+        </section>
+       
+       <!--phần chân trang-->
+       <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <!-- footer-->
+            <footer>
+                <div class="footers">
+
+                        <!-- về chúng tôi -->   
+                        <div class="col24 td">
+                            <h2>Về Chúng tôi</h2>
+                                <div>
+                                <p>Sự hài lòng của quý khách là niềm vinh hạnh của chúng tôi.
+                                    Chúc quý khách ngon miệng, chúng tôi luôn đồng hành cùng bạn. 
+                                    Xin trân trọng cảm ơn !!
+                                </div>
+                            </p>
+                        </div>
+
+                        <!-- thông tin liên lạc  --> 
+                        <div class="col35">
+                            <h2>Thông tin liên lạc</h2>
+                            <hr class="line_footer" />
+                            <div class="ttlh">
+                                    <div class="lien_he">
+                                        <div  class="ki_tu"><i class="fas fa-phone-volume"></i></div>
+                                        <div class="info" >
+                                            <span>Số điện thoại</span>
+                                            <br>
+                                            <span>0797014886</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="lien_he">
+                                        <div class="ki_tu"><i class="fas fa-envelope"></i></div>
+                                        <div class="info">
+                                            <span>Email</span>
+                                            <br>
+                                            <a class="mails" href="mailto:tramanhvo2103@gmail.com">tramanhvo2103@gmail.com</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="lien_he">
+                                        <div  class="ki_tu"><i class="fas fa-map-marker-alt"></i></div>
+                                        <div class="info">
+                                            <span>Địa chỉ</span>
+                                            <br>
+                                            <span>76/1 An Dương Vương, P.16, Q.8</span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <!--mạng xã hội --> 
+                        <div class="col15 ">
+                            <h2>Mạng xã hội</h2>
+                            <hr class="line_footer" />
+                            <div class="add_mxh">
+                                <div class="mxh">
+                                    <a href="https://www.facebook.com/vo.tramanh.543" title="Facebook"><i class="one fab fa-facebook-square"></i></a>
+                                    <br/>
+                                    <a href="#" title="Instagram"><i class="two fab fa-instagram"></i></a>
+                                    <br/>
+                                    <a href="#" title="Twitter"><i class="three fab fa-twitter-square"></i></a> 
+                                    <br/>
+                                    <a href="#" title="Youtube"><i class="four fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- giờ mở cửa --> 
+                        <div class="col24 times">
+                            <h2>Giờ mở cửa</h2>
+                            <hr class="line_footer" />
+                            <div class="times_open">
+                                <p>Thứ hai - Thứ sáu: 8:AM - 10:PM</p>
+                                <p>Thứ bảy - Chủ nhật: 8:AM - 11:PM</p>
+                                <p>Ngày lễ vẫn hoạt động bình thường </p>
+                            </div>
+                        </div>
+
+                </div>
+            </footer>
+
+            <!--kết-->
+            <div class="end">
+                <p>Copyright © 2021 All Rights Reserved</p>
+                <p>Thiết kế bởi Trâm Anh</p>
+            </div>
+        </div>
+
+       <!-- link js animate scroll library-->
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 400,
+                duration: 1000,
+                disable: false,
+            });
+        </script>
+
+    </body>
+</html>
