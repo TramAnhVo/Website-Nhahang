@@ -1,4 +1,4 @@
-Giao diện trang web tĩnh với HTML, CSS và Javascript
+Giao diện trang web tĩnh với HTML, CSS và Javascript. 
 Hệ thống với các giao diện như
 + trang chủ nhà hàng
 + Lựa chọn món ăn
